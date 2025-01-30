@@ -393,10 +393,12 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ndia0"]
-radius = 8.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pnvv"]
+radius = 5.0
+height = 10.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_a0py4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -406,8 +408,8 @@ animation = &"watering_right"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_ndia0")
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_5pnvv")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_1y0nm")
