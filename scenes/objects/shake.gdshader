@@ -7,7 +7,7 @@ void vertex() {
 	vec2 shake = vec2(0.0);
 	
 	if(VERTEX.y < 0.0) {
-		shake.x = sin(TIME * shake_speed * VERTEX.y) * shake_intensity;
+		shake.x = sin(TIME * shake_speed) * shake_intensity;
 	}
 	
 	VERTEX.xy += shake;

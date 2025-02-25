@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://htcldyg5txju"]
+[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://htcldyg5txju"]
 
 [ext_resource type="Texture2D" uid="uid://bf4bhjx24v7r1" path="res://assets/tilesets/water.png" id="1_01ybb"]
 [ext_resource type="Texture2D" uid="uid://c1q74452lgjow" path="res://assets/tilesets/grass.png" id="2_kowf6"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dmpe5i16rhbyr" path="res://assets/objects/basic_grass_biom_things.png" id="4_3eg17"]
 [ext_resource type="PackedScene" uid="uid://cq0lnbdevbnmx" path="res://scenes/houses/large_house.tscn" id="5_2csvk"]
 [ext_resource type="PackedScene" uid="uid://c8i7xmifv03ks" path="res://scenes/objects/trees/small_tree.tscn" id="6_iwckt"]
+[ext_resource type="PackedScene" uid="uid://cpsgng1vdl2gy" path="res://scenes/objects/rocks/rock.tscn" id="6_vssln"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fp5pq"]
 texture = ExtResource("1_01ybb")
@@ -477,6 +478,7 @@ texture = ExtResource("4_3eg17")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_qld8i"]
 scenes/1/scene = ExtResource("5_2csvk")
+scenes/2/scene = ExtResource("6_vssln")
 scenes/3/scene = ExtResource("6_iwckt")
 
 [resource]
